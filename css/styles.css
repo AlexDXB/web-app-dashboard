@@ -109,7 +109,6 @@ header {
     border-bottom: 1px solid darkgray;
 }
 .alert {
-   
     background-color: #7477bf;
     border-radius: 7px;
     height: 40px;
@@ -131,11 +130,8 @@ header {
         display: grid;
         grid-template-columns: 50% ;
     }
-    .main-header{
-        display: flex;
-        
-    }
-   
+    
+    .header-768px,
     .traffic, 
     .social,
     .members,
