@@ -100,7 +100,8 @@
 
                                         <!-- SOCIAL STATS -->
     <div class="social margin">
-        <h3>Social stats</h3>
+        <h3>SOCIAL STATS</h3>
+        <div class="social-flex">
         <div class="social-container">
             <div class="social-image">
                 <svg class="social-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -136,6 +137,7 @@
                 <p>22,189</p>
             </div>
         </div>
+        </div>
     </div>
 
                             <!--New Members-->
@@ -147,7 +149,7 @@
                 <p>Victoria Chambers</p>
                 <a href="#">victoria.chambers80@example.com</a>               
             </div>
-            <p>10/15/20</p>
+            <p class="date">10/15/20</p>
         </div>
         <div class="members-container">
             <img class="profile-image" src="images/member-2.jpg" alt="member">
@@ -155,7 +157,7 @@
                 <p>Dale Byrd</p>
                 <a href="#">victoria.chambers80@example.com</a>               
             </div>
-            <p>10/15/20</p>
+            <p class="date">10/15/20</p>
         </div>
         <div class="members-container">
             <img class="profile-image" src="images/member-3.jpg" alt="member">
@@ -163,7 +165,7 @@
                 <p>Dawn Wood</p>
                 <a href="#">victoria.chambers80@example.com</a>               
             </div>
-            <p>10/15/20</p>
+            <p class="date">10/15/20</p>
         </div>
         <div class="members-container">
             <img class="profile-image" src="images/member-4.jpg" alt="member">
@@ -171,7 +173,7 @@
                 <p>Dan Oliver</p>
                 <a href="#">victoria.chambers80@example.com</a>               
             </div>
-            <p>10/15/20</p>
+            <p class="date">10/15/20</p>
         </div>
     </section>
                         <!-- recent activity-->
@@ -179,53 +181,55 @@
     <section class="activity margin">
         <h3>RECENT ACTYVITY</h3>
         <div class="recent-members">
-            <img class="profile-image"src="images/member-1.jpg" alt="">
-        </div>
-        <div class="recent-text">
-            <p>Victoria Chambers commented on WebApp's SEO Tips</p>
-            <p>4 hours ago</p>
-        </div>
-
-        <div class="recent-members">
-            <img class="profile-image"src="images/member-2.jpg" alt="">
-        </div>
-        <div class="recent-text">
-            <p> Dale Bird liked the post on Facebook's changes for 2021</p>
-            <p>5 hours ago</p>
+            <img class="profile-image"src="images/member-1.jpg" alt="">   
+            <div class="recent-text">
+                <p>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
+                <p class="date">4 hours ago</p>
+            </div>
         </div>
 
         <div class="recent-members">
-            <img class="profile-image"src="images/member-3.jpg" alt="">
+            <img class="profile-image"src="images/member-2.jpg" alt="">       
+            <div class="recent-text">
+                <p> Dale Bird liked the post on <b>Facebook's changes for 2021</b></p>
+                <p class="date">5 hours ago</p>
+            </div>
         </div>
-        <div class="recent-text">
-            <p>Dawn Wood commented on Facebook's changes for 2021</p>
-            <p>5 hours ago</p>
+
+        <div class="recent-members">
+            <img class="profile-image"src="images/member-3.jpg" alt="">        
+            <div class="recent-text">
+                <p>Dawn Wood commented on <b>Facebook's changes for 2021</b></p>
+                <p class="date">5 hours ago</p>
+            </div>
         </div>
 
         <div class="recent-members">
             <img class="profile-image"src="images/member-4.jpg" alt="">
-        </div>
-        <div class="recent-text">
-            <p>Victoria Chambers posted WebApp's SEO Tips</p>
-            <p>1 day ago</p>
+            <div class="recent-text">
+                <p>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
+                <p class="date">1 day ago</p>
+            </div>
         </div>
     </section>
                                 <!--Message User-->
 
     <section class="message margin">
-        <h3>Message User</h3>
+        <h3>MESSAGE USER</h3>
         <form class="user-form">
             <input class="form-field" id="userField" type="text" placeholder="Search for user">
             <textarea id="messageField"  class="form-area" placeholder="Meessage for user"></textarea>
             <button class="button-primary" id="send">Send</button>
         </form>
     </section>
+
+
                                 <!--Settings-->
     <section class="settings margin">
-            <h3>Settings</h3>
+            <h3>SETTINGS</h3>
 
         <!-- custom CSS toggle code-->
-        <label class="switch-light switch-ios" style="width: 100px" onclick="">
+        <label class="switch-light switch-ios"  onclick="">
             <input type="checkbox">
         
             <strong>
@@ -237,6 +241,7 @@
             <span>On</span>
             <a></a>
             </span>
+        
         </label>
         <!-- custom CSS toggle code-->
         <label class="switch-light switch-ios" style="width: 100px" onclick="">
@@ -253,7 +258,7 @@
             </span>
         </label>
 
-        <select class="form-field" id="timezone">
+        <select class="form-field form" id="timezone">
             <option selected disabled>Select Timezone</option>
             <option>Eastern</option>
             <option>Atlantic</option>
