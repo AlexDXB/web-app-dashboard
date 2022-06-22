@@ -136,7 +136,7 @@ header {
 }
 .traffic-nav li:hover {
     background-color: #81c98f;
-    border-radius: 15px;
+    border-radius: 25px;
     color: #fcf4f7;
 }
 .social,
@@ -271,7 +271,32 @@ header {
 }
 .settings {
     margin-bottom: 1rem;
+   
 }
+label.switch-light.switch-ios {
+    display: flex;
+    justify-content:space-between;
+    margin:1rem;
+}
+
+.switch-ios.switch-light > span {
+    width: 100px;
+    
+  }
+  .switch-ios.switch-light input:checked ~ span {
+    box-shadow:  inset 0 0 0 30px  #5488CF;
+    border-color: darkgray;
+  }
+  .switch-ios.switch-light input:checked ~ span a {
+    border-color: #5488CF;
+  }
+  
+  .switch-light strong {
+    width: 200px;
+    align-self: center;
+  }
+
+ 
 .settings-button {
     display: flex;
     justify-content: space-around;
@@ -292,7 +317,12 @@ header {
     border: 2px solid lightgray;
     background-color: darkgrey;
 }
-
+.bell-svg:hover {
+    transform: scale(1.2);
+}
+.navigation img:hover {
+    transform: scale(1.2);
+}
   
 
 
@@ -342,6 +372,7 @@ header {
     }
     .navigation {
         display:block;
+        padding-top: 2rem;
     }
     .navigation img {
         width: 30px;
@@ -356,6 +387,10 @@ header {
     }
     .margin {
         margin: 0 0;
+    }
+    .user-head h3 {
+        font-size: 1.5rem;
+        margin-left: 2rem;
     }
     .traffic-header,
     .members,
@@ -373,6 +408,54 @@ header {
     .social-container {
         margin:0 10px;
     }
+    
+    .members-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0;
+        
+    }
+    .recent-members{
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 1rem;
+        
+    }
+    .recent-members .profile-image {
+        margin-right: 2rem;
+    }
+    .members-text,
+    .recent-text {
+        text-align: left;
+    }
+    .button-disabled,
+    .button-primary,
+    .form-field {
+        height: 5rem;
+    }
+    .form-area {
+        height: 10rem;
+    }
+    label.switch-light.switch-ios {
+        justify-content: flex-start;
+    }
+    .traffic-nav {
+        justify-content: flex-end;
+        
+    }
+    .traffic-nav li {
+        padding:.8rem 2rem;
+    }
+    .form-field::placeholder,
+    .form-area::placeholder {
+        font-size: 1.3rem;
+    }
+  
+    
+    
+   
+   
            
 }
 
@@ -391,5 +474,58 @@ header {
     .activity,
     .settings {
         grid-column: 2 / span 1;
-    }       
+    }
+    .traffic-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .traffic-nav li {
+        padding: .8rem .5rem;
+    }
+    .social h3,
+    .mobile h3,
+    .daily h3 {
+      margin-top: 0;
+      margin-bottom: 2rem;  
+    }
+    
+    .profile-image {
+        height: 50px;
+        width: 50px;
+    }
+    .members-text a,
+    .recent-text p,
+    .members-text p {
+        font-size: 1rem;
+    }
+    .recent-members,
+    .members-container {
+        height: 100px;
+        margin: 0;
+    }
+    .members {
+        border-right: 2px solid lightgray;
+        margin-right: 0;
+    } 
+    .activity {
+        margin-left: 0;
+    }
+    .activity h3 {
+        margin-left: 10px;
+    }
+    .message {
+        border-right: 2px solid lightgray;
+        margin: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    label.switch-light.switch-ios {
+        margin-top: 2rem;
+    }
+    .form {
+        margin-top: 3.7rem;
+    }
+    
+     
 }
