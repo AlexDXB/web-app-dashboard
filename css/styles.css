@@ -169,7 +169,7 @@ header {
     width: 95vw;
 }
 .social-container {
-    width: 100%;
+    width:100%;
     height: fit-content;
     display: flex;
     background-color: rgba(211, 209, 209, 0.2);
@@ -427,11 +427,30 @@ label.switch-light.switch-ios {
         
     }
     .settings,
-    .message,
-    .social-container {
+    .message {
         margin:0 10px;
     }
+    .social-container {
+        margin: 0 5px;
+    }
+
+    .social-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 1rem;
+    }
+    .social-svg {
+        height: 25px;
+        width: 25px;
+    }
+    .social-text p:last-child {
+        font-size: 2rem;
+    }
+    .social-text p:first-child {
+        font-size: 1rem;
+    }
     
+   
     .members-container {
         flex-direction: row;
         justify-content: space-between;
