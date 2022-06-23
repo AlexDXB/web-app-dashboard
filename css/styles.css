@@ -135,6 +135,7 @@ header {
     align-self: center;
     align-items: center;
     justify-content: space-between;
+    
 }
 .alert p {
     margin-left: 10px;
@@ -239,9 +240,7 @@ header {
     text-decoration: none;
     color: #5488CF;
 }
-.date{
-    margin-top:0px;
-}
+
 .recent-text {
     margin-bottom: 1rem;
 }
@@ -351,6 +350,9 @@ label.switch-light.switch-ios {
 .img-text{
     text-align: center;
 }
+.date{
+    margin-top:0px; 
+}
 
   
 
@@ -437,6 +439,10 @@ label.switch-light.switch-ios {
         margin: 0;
         
     }
+    .date{
+        margin-top:1rem; 
+    }
+   
     .recent-members{
         justify-content:space-between;
         flex-direction: row;
@@ -567,6 +573,10 @@ label.switch-light.switch-ios {
     }
     .form {
         margin-top: 3.7rem;
+    }
+    .profile-image {
+        width: 75px;
+        height: 75px;
     }
     
      

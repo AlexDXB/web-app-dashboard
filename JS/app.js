@@ -5,6 +5,11 @@ const mobileCanvas = document.getElementById("mobile-chart");
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
+const bell = document.querySelector('.bell');
+
+
+
+
 
 
 
