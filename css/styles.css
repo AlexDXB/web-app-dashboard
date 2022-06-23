@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0 auto;
     background-color: #fcf4f7;
@@ -99,6 +102,21 @@ header {
 .main-header {
     display: flex;
    
+}
+.bell {
+    display: flex;
+    position: relative;
+}
+.bell::after {
+    top: 20px;
+    right: 15px;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(80, 250, 154);
+    border-radius: 50%;
 }
 
 .tab {
@@ -202,6 +220,8 @@ header {
     margin: 1rem 0;
     border-bottom: 2px solid lightgray;
 }
+
+
 .profile-image{
     border-radius: 50%;
 }
@@ -319,19 +339,20 @@ label.switch-light.switch-ios {
 }
 .bell-svg:hover {
     transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
 }
 .navigation img:hover {
     transform: scale(1.2);
 }
+.angle-right {
+    display: none;
+}
+.photo-text,
+.img-text{
+    text-align: center;
+}
+
   
-
-
-
-
-
-
-
-
 
 
 
@@ -417,12 +438,19 @@ label.switch-light.switch-ios {
         
     }
     .recent-members{
-        justify-content: flex-start;
+        justify-content:space-between;
         flex-direction: row;
         padding: 1rem;
-        
     }
-    .recent-members .profile-image {
+    .img-text {
+        display: flex;
+        align-items: center;
+    }
+    
+    .angle-right {
+        display:flex;
+    }
+    .profile-image {
         margin-right: 2rem;
     }
     .members-text,
@@ -450,6 +478,20 @@ label.switch-light.switch-ios {
     .form-field::placeholder,
     .form-area::placeholder {
         font-size: 1.3rem;
+    }
+    .photo-text{
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+    }
+    .angle-right{
+        padding: 10px;
+        font-weight: bold;
+        color: #4275bc;
+    }
+    .angle-right:hover{
+        transform: scale(1.5);
+        cursor: pointer;
     }
   
     
