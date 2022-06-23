@@ -406,7 +406,7 @@ label.switch-light.switch-ios {
         margin: 0 auto;
     }
     .widget-container-half {
-        width: 45vw;
+        width: 43vw;
     }
     .margin {
         margin: 0 0;
@@ -435,8 +435,8 @@ label.switch-light.switch-ios {
     }
 
     .social-image {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-right: 1rem;
     }
     .social-svg {
